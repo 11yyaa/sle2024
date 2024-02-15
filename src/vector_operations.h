@@ -4,19 +4,14 @@
 
 #ifndef VECTOR_OPERATIONS_H
 #define VECTOR_OPERATIONS_H
-std::vector<double> &operator+=(std::vector<double> &vec1,
-                                const std::vector<double> &vec2);
+
 
 std::vector<double> operator+(const std::vector<double> &vec1,
                               const std::vector<double> &vec2);
 
-std::vector<double> &operator-=(std::vector<double> &vec1,
-                                const std::vector<double> &vec2);
-
 std::vector<double> operator-(const std::vector<double> &vec1,
                               const std::vector<double> &vec2);
 
-std::vector<double> &operator*=(std::vector<double> &vec, const double num);
 
 std::vector<double> operator*(const std::vector<double> &vec, const double num);
 
