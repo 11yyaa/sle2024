@@ -80,9 +80,10 @@ CSRMatrix::operator*(const std::vector<double> &column) const {
 
 
 
-DenseMatrix::DenseMatrix(const std::vector<double> &data, const int num_columns)
-    : m_data{data}, m_columns{num_columns},
-      m_rows{(data.size() + num_columns - 1) / num_columns} {
+DenseMatrix::DenseMatrix(const std::vector<double>& data, int num_columns)
+    : m_columns{num_columns},
+      m_rows{static_cast<int>((data.size() + num_columns - 1) / num_columns)}
+{
     m_data.resize(m_columns * m_rows);
 }
 

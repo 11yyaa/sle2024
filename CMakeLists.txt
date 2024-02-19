@@ -1,11 +1,14 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(SLAE)
+project(SLE)
 
 enable_testing()
 
-include_directories(source)
+include_directories(src)
 
-add_subdirectory(source)
+include_directories(googletest)
+
+add_subdirectory(src)
 add_subdirectory(tests)
-add_subdirectory(sam_work)
+
+add_subdirectory(googletest)
