@@ -22,4 +22,5 @@ target_link_libraries(dense_test sle gtest)
 add_executable(vector_operations_test vector_operations_test.cpp)
 target_link_libraries(vector_operations_test sle gtest)
 
-
+add_executable(householder_test householder_test.cpp)
+target_link_libraries(householder_test sle gtest)
