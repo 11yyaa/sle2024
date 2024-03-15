@@ -27,3 +27,7 @@ target_link_libraries(householder_test sle gtest)
 
 add_executable(iterative_methods iterative_methods.cpp)
 target_link_libraries(iterative_methods sle gtest)
+
+add_executable(mpi mpi.cpp)
+target_link_libraries(mpi sle gtest)
+
