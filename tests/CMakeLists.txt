@@ -24,3 +24,6 @@ target_link_libraries(vector_operations_test sle gtest)
 
 add_executable(householder_test householder_test.cpp)
 target_link_libraries(householder_test sle gtest)
+
+add_executable(iterative_methods iterative_methods.cpp)
+target_link_libraries(iterative_methods sle gtest)
