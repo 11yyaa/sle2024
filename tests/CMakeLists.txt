@@ -31,3 +31,6 @@ target_link_libraries(iterative_methods sle gtest)
 add_executable(mpi mpi.cpp)
 target_link_libraries(mpi sle gtest)
 
+add_executable(2 2.cpp)
+target_link_libraries(2 sle)
+
